@@ -1,0 +1,121 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  lamdafunctions
+
+  Sample SAM Template for lamdafunctions
+  
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+    MemorySize: 128
+
+Resources:
+  AddCategory:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: category/add/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+
+
+  GetCategory:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: category/get/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+
+  AddQuestion:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: questions/add/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+
+  DeleteQuestion:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: questions/delete/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+
+  UpdateQuestion:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: questions/update/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+
+  FilteredQuestions:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: questions/filteredQuestions/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+
+  AddGames:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: games/add/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+  GetGames:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: games/getAll/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+
+  FilteredGames:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: games/filteredGames/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+  DeleteGames:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: games/deletegames/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64
+  EditGames:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: games/editGames/
+      Handler: index.lambdaHandler
+      Runtime: nodejs14.x
+      Role: "arn:aws:iam::154851512788:role/LabRole"
+      Architectures:
+        - x86_64

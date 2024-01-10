@@ -1,0 +1,117 @@
+.page-card {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+    padding-bottom: 3%;
+    border-radius: 30px;
+}
+
+.main-container{
+    display: 'flex';
+    justify-content: 'center';
+    align-items: 'flex-start';
+    background: "#cccccc";
+    height: '100vh';
+}
+
+.registration-header {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.registration-form-body {
+    width: 50%;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.registration-submit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.registration-submit:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+}
+
+.registration-error-message {
+    color: red;
+    font-size: 12px;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.auth-alt-message {
+    text-align: center;
+    font-size: 12px;
+    color: grey;
+}
+
+.auth-link {
+    color: #4CAF50;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.auth-or-div {
+    display: flex;
+    align-items: center;
+}
+
+.auth-or-text {
+    color: grey;
+    text-decoration: wavy;
+    font-size: 10px;
+}
+
+.auth-or-line {
+    width: 100%;
+    background-color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.auth-google-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 134, 248);
+    border: 1px solid rgb(35, 134, 248);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.auth-google-div:hover {
+    background-color: white;
+    border: 1px solid #4CAF50;
+    color: #4CAF50
+}
+
+.auth-google-text {
+    margin-block: 10px;
+    margin-right: 8px;
+}
+
+.auth-google-icon {
+    height: 16px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}

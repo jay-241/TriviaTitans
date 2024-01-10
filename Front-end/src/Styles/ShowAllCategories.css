@@ -1,0 +1,46 @@
+/* /src/Styles/ShowAllCategories.css */
+/* Custom styles for the ShowAllCategories component */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height to fill the entire viewport vertically */
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.list-group {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.list-group-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Optional: Add some spacing at the top and bottom of the list */
+.list-group-item:first-child {
+    margin-top: 10px;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 10px;
+}
